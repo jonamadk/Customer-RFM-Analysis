@@ -26,7 +26,7 @@ Also, using the` K-Means`, and `Agglomerative Clustering` Methods the clustering
 
 4. **Visualization**
 - **Plot for Frequency Monetary and Recency**
-![Scatter Plot for Frequency Monetary and Recency](RVFVM.png)
+![Scatter Plot for Frequency Monetary and Recency](charts/RVFVM.png)
  This visualization contains three scatterplots that analyze customer behavior using different RFM metric combinations.
 
 **Monetary vs. Frequency (left):** Shows the relationship between spending and purchase frequency. Most customers cluster at low spending and low frequency, while only a few customers with very high frequency also contribute significantly higher spending, highlighting the presence of “VIP” buyers.
@@ -37,7 +37,7 @@ Also, using the` K-Means`, and `Agglomerative Clustering` Methods the clustering
 
 Overall, these plots highlight that high-spending, high-frequency, and recent buyers are the most valuable customer segment, whereas those with low frequency and high recency contribute the least and need re-engagement strategies.
    
-  ![Customer Segmentation by Frequency & Monetary](Seg-by-Frequency-Monetary.png)
+  ![Customer Segmentation by Frequency & Monetary](charts/Seg-by-Frequency-Monetary.png)
   
    This scatterplot shows customer segmentation using RFM (Recency, Frequency, Monetary) metrics. The x-axis represents purchase frequency, the y-axis shows total spending (monetary value), bubble size reflects the monetary score (spending level), and color indicates recency (how recently they purchased). From the chart, most customers are low-frequency, low-spending buyers clustered in the bottom-left, while a few high-value customers (large red bubbles) appear in the middle and upper-right, showing they buy often, spend more, and are recent. **Some high-spending but blue-colored customers indicate past valuable buyers at risk of churn.** Overall, this chart highlights loyal/high-value customers, at-risk customers, and low-value segments, helping businesses target strategies effectively.
    - Built **TreeMap visualization** to show customer distribution across segments.
@@ -45,7 +45,7 @@ Overall, these plots highlight that high-spending, high-frequency, and recent bu
      - 🟩 High Value → Green
      - 🟦 Mid Value → Blue
      - 🟥 Low Value → Red
-![Customer Segmentation Chart](Customer-segmentation-and-count.png)
+![Customer Segmentation Chart](charts/Customer-segmentation-and-count.png)
 We can observe the segmented customers along with their count in the above chart.
 1. **Analysis & Strategy**
    - Interpreted business meaning of each segment.
@@ -82,8 +82,8 @@ We can observe the segmented customers along with their count in the above chart
 ---
 ## 3D Plot of the Customer Cluster based on RFM using K-Means
 - Determining the Optimal `K` Cluster Value  using `Elboww method.`
-![Elbow method for determining the K value](elbow.png)
-![Customer cluster using K-Means](customer-cluster.png)
+![Elbow method for determining the K value](charts/elbow.png)
+![Customer cluster using K-Means](charts/customer-cluster.png)
 This analysis applies K-Means clustering on customer RFM (Recency, Frequency, Monetary) data to segment customers into distinct groups. The first chart uses the Elbow Method, where the variance sharply decreases up to around `k=3`, suggesting that 3 clusters provide the optimal balance between accuracy and simplicity. The second chart is a 3D scatter plot of the clusters, where customers are grouped based on their RFM values. The three colors represent different segments: one cluster consists of recent, frequent, and high-spending customers `(loyal/high-value buyers)`, another represents moderate customers with average values, and the last contains inactive or low-value customers with low frequency, low spending, and high recency. 
 **Cluster 0 (Purple)** = Low-value / irregular customers
 **Cluster 1 (Teal)** = Active, moderate-value customers (growth potential)
@@ -92,12 +92,12 @@ This clustering helps businesses clearly distinguish between valuable loyal cust
 
 
 **Analysis of Hierarchical Clustering (Linkage criteria - average):**
-![Average Linkage](average.png)
+![Average Linkage](charts/average.png)
 > This plot shows **Hierarchical Clustering (Average Linkage)** on RFM data in 3D, where customers are divided into two clusters. **Cluster 0 (green)** represents the majority of customers who have low spending, purchase less frequently, and show higher recency, making them mostly low-value or inactive customers. **Cluster 1 (orange)**, on the other hand, represents a smaller group of customers with higher monetary values and better frequency and recency, identifying them as high-value, loyal buyers. The **red stars** mark the cluster centroids, which indicate the average position of each group. In short, this clustering highlights a clear separation between high-value loyal customers and the much larger group of low-value customers, helping businesses target strategies more effectively.
 
 
 - **Analysis of Hierarchical Clustering (Linkage criteria - complete):**
-![Complete Linkage](complete.png)
+![Complete Linkage](charts/complete.png)
 >  This 3D plot shows Hierarchical Clustering (Complete Linkage) on RFM data, dividing customers into two groups. Cluster 0 (green) represents the majority with low-to-moderate frequency, spending, and higher recency → mostly low/mid-value customers. Cluster 1 (orange) represents fewer but high-spending, more loyal customers → the most valuable segment. The red stars mark cluster centroids (average positions). In short, the model separates high-value loyal buyers from the larger group of low-value customers for targeted strategies.
 
 - **Average Vs Complete Linkage**
@@ -105,7 +105,7 @@ This clustering helps businesses clearly distinguish between valuable loyal cust
 
 ## 📂 Files in this Project
 - `analysis.ipynb` → Jupyter notebook with code and RFM analysis.    
-- `Charts and images'
+- `Charts` folder → Contains analysis plots and charts
 - `README.md` → Documentation of the project.
 
 ---
